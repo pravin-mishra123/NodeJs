@@ -1,4 +1,4 @@
-const obj = require("./calculateSum")
+const obj = require("./calculateSum");
 var name = "Namste NodeJs";
 
 var a = 10;
@@ -14,6 +14,5 @@ var b = 20;
 // console.log(globalThis); // it refer to the global object in node as well as browser too;
 // console.log(globalThis===global); // both are the same global or globalThis
 
-console.log(obj.calculateSum(a,b))
-console.log(obj.x)
-
+console.log(obj.calculateSum(a, b));
+console.log(obj.x);
