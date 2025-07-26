@@ -20,3 +20,7 @@
 * V8 engine handle the garbage collection 
 * v8 engine repository =>https://github.com/v8/v8
 * https://v8.dev/
+
+## Libuv and Event Loop Documents and Ites phases
+* Libuv Documentation: https://libuv.org/
+* Event Loop Documentation: https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick
