@@ -1,5 +1,5 @@
 # NodeJs
-# Module System in NodeJS
+## Module System in NodeJS
 
 ## Sync, Async, setTimeoutZero
 * Sync and Async execution 
@@ -13,7 +13,7 @@
 ## Deep Dive into V8 JS engine
 * v8 engine takes the code and broken into small tokens (peaces)
 * Tokens convert into AST (Abstract Syntax Tree) => https://astexplorer.net/
-# Syntax Error : 
+## Syntax Error : 
 * When code is not able to generate the AST (Abstract Syntax Tree) it will give Syntax error;
 * AST => Intepreter
 * JavaScript engine have Interpreter and compile both.
@@ -21,6 +21,6 @@
 * v8 engine repository =>https://github.com/v8/v8
 * https://v8.dev/
 
-## Libuv and Event Loop Documents and Ites phases
+# Libuv and Event Loop Documents and Ites phases
 * Libuv Documentation: https://libuv.org/
 * Event Loop Documentation: https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick
