@@ -64,5 +64,29 @@
     * Read about Event Emmitor
     * Read about streams and buffer
     * Pipes
+
+## Creating Server
+* Read about Stream and Buffer in NodeJs => https://nodejs.org/api/stream.html
+* Read about Server overview 
+* Read about HTTP , FTP , SMTP
+* Read about TCP / IP , Packets in networkig 
+* Explore about DNS => https://www.cloudflare.com/learning/dns/what-is-a-dns-server/
+* Read about PORT => https://www.cloudflare.com/learning/network-layer/what-is-a-computer-port/
+* Read about Sockets vs Web Sockets
+
+
+### Creating Server using NodeJs
+* const http = require("http"); // const http = require("node:http") -> this is the core module of node js
+
+const server = http.createServer(function (req, res){
+    if(req.url === "/getData"){
+        res.end("There is not secreat data")
+    }
+    res.end("Hello World")
+})
+
+server.listen(7777);
+
+
         
 
