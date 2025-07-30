@@ -87,6 +87,77 @@ const server = http.createServer(function (req, res){
 
 server.listen(7777);
 
+## Databases SQL & NoSQK - episode 12
+* What is database ? Read about More
+* Types of databases
+    * Relational DB - MySQL, PostgreSQL:
+    * NoSQL DB - MongoDB:
+    * In-memory DB - Redis:
+    * Distributed SQL DB - CockroachDB:
+    * Time Series DB - InfluxDB:
+    * OO DB - db4o:
+    * Graph DB - Neo4j:
+    * Hierarchical DB - IBM IMS:
+    * Network DB - IDMS:
+    * Cloud DB - Amazon RDS:
+
+## Creating Database & Mongodb
+* Steps
+    * Goto MongoDB website
+    * Create free M0 cluster
+    * Create a User -> wahtever wish too
+    * Get the connection string
+    * Search MongoDB Compass and click to download and install it
+    * Create Collection
+    * Create documents
+    * Found ip address error take refrence => https://www.youtube.com/watch?v=tg3XzK5wLPc&t=93s
+    * To know about the local IP address => curl -4 ifconfig.me
+    * create new database using UI 
+
+* Local setup using nodejs 
+    * Install Mongodb npm package
+        * npm install mongodb
+    * const {MongoClient} = require("mongodb")
+
+    // connect through local URL if installed in the machine
+    // const url = 'mongodb://localhost:20323';
+
+    // connect to given connection string url on the browser
+    const url = "mongodb+srv://pravinmishra3344:xgTMFASDPPBcFQM6@namastenode.cushngx.mongodb.net/"
+
+    const client = new MongoClient(url);
+
+    const dbName = 'HelloWorld';
+
+    async function main(){
+    // use connect method to connect to the server
+    await client.connect();
+    console.log("Connected Successfully to the server");
+    const db = client.db(dbName);
+    const collection = db.collection('User');
+
+    return 'done.';
+    }
+
+    main()
+    .then(console.log)
+    .catch(console.error)
+    .finally(()=>client.close());
+
+* // Insert the documents
+     // const insertResult = await collection.insertMany([data]);
+    // console.log('Inserted documents =>', insertResult);
+* // Find All Documents
+    // const findResult = await collection.find({}).toArray();
+    // console.log('Found documents =>', findResult);
+* // count the documents
+    // const countResult = await collection.countDocuments({}) // empty object is working as filter
+    // console.log("Count Documents", countResult)
+* // Find all the documents with a filter of firstname: "Deepika"
+    const result = await collection.find({firstName:"Deepika"}).toArray()
+    console.log(result)
+    
+
 
         
 
