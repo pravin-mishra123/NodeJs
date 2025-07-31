@@ -156,6 +156,24 @@ server.listen(7777);
 * // Find all the documents with a filter of firstname: "Deepika"
     const result = await collection.find({firstName:"Deepika"}).toArray()
     console.log(result)
+
+
+# Season -2 - Building Project and all theory concepts used in practical manner.
+## Episode - 00 - Discuss about which Project to build and follow the Indestries Standard
+* Project Name : DevTinder Project
+
+## Episode - 01 Microservices vs Monolith architecture - How to build a project.
+* Industries follow the Waterfall Model (SDLC) - Software Development Life Cycle 
+    * Requirements ----> Project Manager / Product Manager  + Designer
+    * Design -----> Senior Engineer / Team Lead -> They have to deside what are the things required for the project - Tech Stack, Scalability, Security, Monolith or Microservices Architecture etc...
+    * Development -----> SDE1 /SDE2/Intern/Sr. Software Eengineer
+    * Testing -----> SDET/ QA Engineer etc
+    * Deployement -----> DevOps/ Software engineer etc
+    * Maintainence -----> Maintain the application , if new feature come follow the same cycle again an again.
+
+    ### Monolith Vs Microservices
+    * What is Monolith => https://www.ibm.com/think/topics/monolithic-architecture
+    
     
 
 
