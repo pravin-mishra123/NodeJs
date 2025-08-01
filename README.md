@@ -1,4 +1,7 @@
 # NodeJs
+## Web Accessibility WCAG 2.2 Guideline
+* Read More about the Web Accessibility => https://www.w3.org/TR/WCAG22/
+
 ## Module System in NodeJS
 
 ## Sync, Async, setTimeoutZero
@@ -156,6 +159,7 @@ server.listen(7777);
 * // Find all the documents with a filter of firstname: "Deepika"
     const result = await collection.find({firstName:"Deepika"}).toArray()
     console.log(result)
+* Explore more methods through documentation => https://mongodb.github.io/node-mongodb-native/Next/
 
 
 # Season -2 - Building Project and all theory concepts used in practical manner.
@@ -172,7 +176,9 @@ server.listen(7777);
     * Maintainence -----> Maintain the application , if new feature come follow the same cycle again an again.
 
     ### Monolith Vs Microservices
-    * What is Monolith => https://www.ibm.com/think/topics/monolithic-architecture
+    * What is Monolith and Microservice Architecture => https://www.ibm.com/think/topics/monolithic-architecture
+    * both architecture used in the Industry but large application follow the Microservices architecture to handle different services seemless.
+    * it's totally depends on the use cases and needs
     
     
 
