@@ -179,6 +179,56 @@ server.listen(7777);
     * What is Monolith and Microservice Architecture => https://www.ibm.com/think/topics/monolithic-architecture
     * both architecture used in the Industry but large application follow the Microservices architecture to handle different services seemless.
     * it's totally depends on the use cases and needs
+## Episode - 02 | Features, HLD, LLD & Planning
+* Talk about the features that should be build for the Product
+    * Create an account
+    * Login
+    * Update Your Profile
+    * Feed page - Explore
+    * Send Connection Request
+    * See Our Matches
+    * See the request we have sent / recevied
+    * .............. And Many More............
+* Tech Planning
+    * Building two microservice 
+        * Fronend ( React, MUI, Bootstrap / Tailwindcss)
+        * Backend ( NodeJs, MongoDB database)
+        * ------------ I will Add more when start developing---------------
+* LLD (Low Level Design Planning) = if your planning is perfect then writing code is very easy, So spend more time in planning.
+    * https://medium.com/@sandeep.kumar.ece16/low-level-design-roadmap-7581688d96fa
+    * https://dev.to/srishtikprasad/low-level-design-and-solid-principles-4am9
+    * Read about LLD => https://github.com/ashishps1/awesome-low-level-design
+
+
+    * Database Design => Most Important 
+        * Understand ERD ( Entity Relationship Diagram)
+        * Think about collections (Documents, field) / Table structures (Row,columns)
+        * Validations
+        * Password Incryptions
+    * API Design 
+        * What are the api need
+            * Post - /signup
+            * Post - /login
+            * Get - /Profile
+            * Post - /profile
+            * Patch - /profile
+            * Delete - /profile
+            * Post - /sendRequest -ignore/interested
+            * Post - /overviewRequest - accept/reject
+            * Get - /request
+            * Get - /connection
+    * Here's a breakdown of some key patterns and their relevance to LLD:
+        * Singleton - Used Most in the industry
+        * Builder
+        * Factory
+        * Abstract Factory
+        * Adapter
+        * Decorator
+        * Observer
+* Understand HLD ( High Level Design)
+    * https://en.wikipedia.org/wiki/High-level_design
+    * https://saannjaay.medium.com/low-level-design-lld-high-level-design-hld-a-practical-guide-for-system-design-interviews-bd8388da4492
+
     
     
 
